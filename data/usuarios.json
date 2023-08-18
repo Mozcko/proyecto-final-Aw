@@ -1,0 +1,60 @@
+{
+    "usuarios":[
+          {
+            "correo":"judith@gmail.com",
+            "pwd": "judith",
+            "pedidos":[
+                        {
+                        "numero":"1015", 
+                         "fecha":"2020-12-04", 
+                         "total":"$1,405.80", 
+                         "estatus":"Entregado"
+                        },
+                        {
+                        "numero":"1002", 
+                         "fecha":"2021-01-20", 
+                         "total":"$899.80", 
+                         "estatus":"Cancelado"
+                        }, 
+                        {
+                        "numero":"1003", 
+                         "fecha":"2021-03-18", 
+                         "total":"$2,388.00", 
+                         "estatus":"Procesado"
+                        }
+                      ]
+           
+            
+          }, 
+          {
+            "correo":"juan@gmail.com",
+            "pwd": "juan",
+            "pedidos":[
+                        {
+                        "numero":"1004", 
+                         "fecha":"2020-11-14", 
+                         "total":"$2,305.80", 
+                         "estatus":"Cancelado"
+                        },
+                        {
+                        "numero":"1005", 
+                         "fecha":"2021-02-18", 
+                         "total":"$699.80", 
+                         "estatus":"Entregado"
+                        }, 
+                        {
+                        "numero":"1006", 
+                         "fecha":"2021-03-19", 
+                         "total":"$5,699.00", 
+                         "estatus":"Entregado"
+                        }, 
+                        {
+                        "numero":"1007", 
+                         "fecha":"2021-04-01", 
+                         "total":"$1,099.00", 
+                         "estatus":"Proceando"
+                        }
+                      ]
+          }
+    ]
+  }

@@ -1,0 +1,279 @@
+/*
+color palette:
+#3d3d3d
+#000000
+#CF5C36
+#EEE5E9
+#7C7C7C
+#EFC88B
+*/
+
+html,
+body {
+  height: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+p {
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: black;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+
+/*
+    botones
+*/
+
+.primary-btn {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  color: #eee5e9;
+  background: #cf5c36;
+  letter-spacing: 5px;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 250px;
+  transition: all 0.5;
+  margin: 5px;
+}
+
+.primary-btn span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.primary-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.primary-btn:hover span {
+  padding-right: 25px;
+}
+
+.primary-btn:hover span:after {
+  font-size: 40px;
+  top: -3px;
+  opacity: 1;
+  right: 0;
+}
+
+.primary-btn:hover {
+  text-decoration: none;
+  color: #000000;
+  background: #efc88b;
+}
+
+/*
+    barra de navegación
+*/
+
+.logo {
+  color: #eee5e9;
+}
+
+.menu {
+  font-family: monospace;
+}
+
+#navbar {
+  background-color: #000000;
+  position: fixed;
+  /*top: -60px;*/
+  width: 100%;
+  display: block;
+  transition: top 0.5;
+}
+
+.menu a {
+  float: none;
+  display:inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+.menu a:hover {
+  background-color: #eee5e9;
+  color: #000000;
+}
+
+.logo {
+  padding-left: 5px;
+}
+
+.logo a img{
+  display: inline-block;
+}
+
+
+/*
+    banner/background
+*/
+
+.bgimage {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgimage .background {
+  margin: auto;
+  padding: 10px;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  text-align: center;
+}
+
+.bgimage h3 {
+  padding: 100px;
+  color: #eee5e9;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.categorias {
+  padding-top: 30px;
+}
+
+.categorias img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.audio {
+  background-color: #000000;
+  padding: 30px;
+}
+
+.audio .audio-p p {
+  padding-top: 30px;
+  color: #eee5e9;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Trebuchet MS";
+}
+
+.auto-img {
+  width: 85vmin;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 10% 25% 30% rgba(0, 0, 0, 0.3);
+}
+
+.auto-img img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  80% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+.audio-btn {
+  padding-top: 30px;
+}
+
+/*
+  icono de WhatsApp
+*/
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-whatsapp {
+  margin-top: 16px;
+}
+
+/*
+    footer
+*/
+footer {
+  padding: 20px;
+  background-color: #7c7c7c;
+  text-align: left;
+  color: #eee5e9;
+}
+
+.socialM span a {
+  font-size: 37px;
+  color: #eee5e9;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.socialM span p {
+  color: #eee5e9;
+  text-align: justify;
+  font-size: larger;
+}
+
+.socialM span a:hover {
+  color: #000000;
+}
+
+.copyrights {
+  text-align: center;
+}
